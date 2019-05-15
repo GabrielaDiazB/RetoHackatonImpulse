@@ -24,6 +24,7 @@ import { SkillLevelComponent } from './components/quiz/skill-level/skill-level.c
 import { RealcaseTestComponent } from './components/realcase-test/realcase-test.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { Quiz1Component } from './components/quiz1/quiz1.component';
 import { RegisterComponent } from './components/register/register.component';
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -44,8 +45,9 @@ import { FooterComponent } from './components/footer/footer.component';
     RealcaseTestComponent,
     HomeComponent,
     NavBarComponent,
-    RegisterComponent,
-    FooterComponent
+    Quiz1Component,
+    FooterComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
