@@ -1,3 +1,36 @@
-<p>
-  user-info works!
-</p>
+<section id="profile" class="container">
+    <div class="row mt-5">
+        <div class="offset-lg-4 col-lg-4 col-sm-6 col-12 main-section text-center card">
+            <!-- <div class="row"> -->
+            <!-- <div class="col-lg-12 col-sm-12 col-12 profile-header"></div> -->
+            <!-- </div> -->
+            <div class="row user-details">
+                <div class="col-12">
+                    <h5 *ngIf="providerId != 'password'" class="font-im name-user">{{user.name}}</h5>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="{{ user.photoUrl }}" class="rounded-circle img-thumbnail img-user" alt="profile">
+                    </div>
+                    <div class="col-8">
+                        <p class="font-im p-about-me">Acerca de mí</p>
+                        <span class="font-im p-info-user">Tengo amplia cartera, con cierres de venta efectivos. Mi expectativa para este nuevo empleo es tener un desarrollo profesional y personal.                    </span>
+                        <!-- <p>{{ user.email }}</p> -->
+                    </div>
+                </div>
+                <hr>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <div *ngIf="auth.user | async; then authenticated else guest"></div>
+
+<ng-template #authenticated>
+  <div *ngIf = "auth.user | async as user">
+    <h3>{{user.displayName}}</h3>
+    <img src="{{user.photoURL}}" alt="">
+    <p>{{user.uid}}</p>
+    <p>{{user.description}}</p>
+  </div>
+</ng-template> -->
