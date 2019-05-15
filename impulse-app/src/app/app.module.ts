@@ -18,6 +18,7 @@ import { CompChallengeComponent } from './components/profile/comp-challenge/comp
 import { CoursesComponent } from './components/courses/courses.component';
 import { TopicsComponent } from './components/courses/topics/topics.component';
 import { TopicmultimediaComponent } from './components/courses/topicmultimedia/topicmultimedia.component';
+import { RealcaseTestComponent } from './components/realcase-test/realcase-test.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { TopicmultimediaComponent } from './components/courses/topicmultimedia/t
     CompChallengeComponent,
     CoursesComponent,
     TopicsComponent,
-    TopicmultimediaComponent
+    TopicmultimediaComponent,
+    RealcaseTestComponent
   ],
   imports: [
     BrowserModule,
