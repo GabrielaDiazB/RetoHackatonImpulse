@@ -1,0 +1,56 @@
+.fnt-im {
+    font-family: Montserrat;
+}
+
+.h-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.h-topic {
+    font-size: 19px;
+}
+
+.p-description {
+    font-size: 15px;
+}
+
+.div-img {
+    text-align: center;
+}
+
+.img-tree {
+    width: 250px;
+}
+
+.p-first {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.p-second {
+    font-size: 15px;
+}
+
+.img-flecha-abajo {
+    width: 15px;
+}
+
+.img-flecha {
+    width: 8px;
+}
+
+.btn-next {
+    width: 333px;
+    height: 53px;
+    background: #CECECE;
+    border-radius: 50px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
