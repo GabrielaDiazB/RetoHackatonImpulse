@@ -19,6 +19,7 @@ import { CoursesComponent } from './components/courses/courses.component';
 import { TopicsComponent } from './components/courses/topics/topics.component';
 import { TopicmultimediaComponent } from './components/courses/topicmultimedia/topicmultimedia.component';
 import { RealcaseTestComponent } from './components/realcase-test/realcase-test.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { RealcaseTestComponent } from './components/realcase-test/realcase-test.
     CoursesComponent,
     TopicsComponent,
     TopicmultimediaComponent,
-    RealcaseTestComponent
+    RealcaseTestComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
