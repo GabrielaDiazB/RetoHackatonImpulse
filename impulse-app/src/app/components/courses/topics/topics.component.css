@@ -1,0 +1,50 @@
+.next-btn{
+    width: 300px;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    background: linear-gradient(90deg, #00EE93 0%, #00A3F9 100%);
+    color: black;
+}
+
+.img-video{
+    width: 300px;
+    padding-top: 40px;
+}
+
+p {
+    text-align: justify;
+}
+
+.difficulty-tag{
+    margin-top: 10px;
+    color: #25CED1;
+    font-weight: bold;
+    background-color: rgb(226, 248, 255);
+}
+
+.share-btn{
+    border-radius: 25px;
+    width: 300px;
+    font-size: 18px;
+    background-color: white;
+    border: 2px solid gray;
+}
+
+.btn-lessons{
+    width: 350px;
+    background-color: white;
+    border: 2px solid gray
+}
+
+.extra-user{
+    width: 100%;
+}
+
+.font-title{
+    font-size: 25px;
+}
+
+.margin-top{
+    margin-top:20px;
+}

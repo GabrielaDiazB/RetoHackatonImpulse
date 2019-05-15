@@ -1,9 +1,30 @@
-<div *ngFor="let course of courseTopics">
-    <div *ngFor="let temas of course.topics">
-        <h1>{{temas.nameTopic}}</h1>
-        <p>{{temas.description}}</p>
-        <!-- <p>{{temas.video}}</p> -->
-        <img src="{{ temas.video }}" />
-        <!-- <video src="{{ temas.video}}"></video> -->
+<div>
+    <h4 class="h-title fnt-im">LECCIÓN</h4>
+    <div *ngFor="let course of courseTopics">
+        <h1 class="h-topic fnt-im">{{ course.topics[0].nameTopic }}</h1>
+        <p class="p-description fnt-im">Del curso: {{ course.topics[0].description }}</p>
+        <div class="div-img">
+            <img src="{{ course.topics[0].video }}" />
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <div>
+                <p class="p-first fnt-im"><img src="../../../../assets/img/flecha-derecha.png" class="img-flecha" /> Introducción</p>
+                <p class="p-second fnt-im">1 video | Total: 3 min</p>
+            </div>
+            <div>
+                <p class="p-first fnt-im"><img src="../../../../assets/img/flecha-derecha.png" class="img-flecha" /> Preparación para el curso</p>
+                <p class="p-second fnt-im">1 video | Total: 3 min</p>
+            </div>
+            <div>
+                <p class="p-first fnt-im"><img src="../../../../assets/img/flecha-abajo.png" class="img-flecha-abajo" /> Técnicas para mejorar las expectativas del cliente</p>
+                <p class="p-second fnt-im">3 videos | Total: 10 min</p>
+                <img src="../../../../assets/img/arbol-aprendizaje.JPG" alt="arbol de aprendizaje" class="img-tree" />
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <button class="btn-next fnt-im">Continuar</button>
     </div>
 </div>
