@@ -10,10 +10,10 @@ import { FirestoreserviceService } from 'src/app/services/firestore/firestoreser
 export class TopicsComponent implements OnInit {
   public courseTopics = [];
 
-  constructor( public coursesService:  FirestoreserviceService) { 
+  constructor( public coursesService: FirestoreserviceService) {
     this.coursesService.getCourses().subscribe(topics => {
       return this.courseTopics = topics;
-    })
+    });
    }
 
   ngOnInit() {

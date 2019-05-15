@@ -11,8 +11,7 @@ export class FirestoreserviceService {
   constructor(public courses: AngularFirestore) { }
 
   getCourses() {
-    return this.collectionCourses = this.courses.collection('courses').valueChanges()
-    
+    return this.collectionCourses = this.courses.collection('courses').valueChanges();
   }
 }
 
@@ -20,13 +19,13 @@ export interface Courses {
   coach?: {
     cellphone: string,
     name: string
-  }
-  skills?: Array<any>,
-  topics?: Array<Topics>
+  };
+  skills?: Array<any>;
+  topics?: Array<Topics>;
 }
 
 export interface Topics {
-  descrption?: string,
-  nametopic?: string,
-  video?: string
+  descrption?: string;
+  nametopic?: string;
+  video?: string;
 }
