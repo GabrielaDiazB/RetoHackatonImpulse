@@ -1,8 +1,8 @@
+<h4>LECCIÓN</h4>
 <div *ngFor="let course of courseTopics">
     <div *ngFor="let temas of course.topics">
-        <h1>{{temas.nameTopic}}</h1>
-        <p>{{temas.description}}</p>
-        <!-- <p>{{temas.video}}</p> -->
+        <h1>{{ temas.nameTopic }}</h1>
+        <p>Del curso: {{temas.description}}</p>
         <img src="{{ temas.video }}" />
         <!-- <video src="{{ temas.video}}"></video> -->
     </div>
