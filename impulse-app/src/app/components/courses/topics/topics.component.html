@@ -1,61 +1,80 @@
-<div>
+<div class="container">
     <div  *ngFor = "let course of courseTopics">
         <div>
-            <h2>Curso</h2>
-            <h1>{{course.name}}</h1>
-            <img src="../../../../assets/img/imagen-video.png" alt="">
-            <button [routerLink]= "['/temas/curso']"> Iniciar el Curso</button>
-            <label for="">Intermedio</label>
+            <h2 class="display-4">Curso</h2>
+            <h1 class="display-5 font-title">{{course.name}}</h1>
+            <img class="rounded mx-auto d-block img-video" src="../../../../assets/img/imagen-video.png" alt="">
+            <button class="btn btn-lg btn-block mx-auto d-block next-btn" [routerLink]= "['/temas/curso']"> Iniciar el Curso</button>
+            <label class="difficulty-tag">Intermedio</label>
         </div>
 
         <div>
-            <h2>Valoración del curso</h2>
+            <h2 class="display-5 font-title margin-top">Valoración del curso</h2>
+            <p class="text-center">55 miembros recomiendan este curso</p>
             <img src="" alt="">
-            <button><i class=""></i>Compartir este curso</button>
+            <button class="btn btn-lg btn-block mx-auto d-block share-btn"><img src="../../../../assets/img/accion-de-descargar.png"> Compartir</button>
 
         </div>
 
         <div>
-            <h2>Resumen</h2>
+            <h2 class="display-5 font-title margin-top">Resumen</h2>
             <p>El experto en servicio al cliente Jeff Toister enseña a evitar situaciones donde se forman expectativas poco razonables, eligiendo un lenguaje apropiado para educar a los clientes y explicar las áreas de confusión potenciales.</p>
         </div>
 
         <div>
-            <h2>Lecciones</h2>
-            <div>
-                <button>Introducción</button>
-                <button>Preparación para el curso</button>
-                <button>Técnicas para mejorar las expectativas del cliente</button>
+            <h2 class="display-5 font-title margin-top">Lecciones</h2>
+            <div class="btn-group-vertical">
+                <button class="btn btn-lessons">Introducción</button>
+                <button class="btn btn-lessons">Preparación para el curso</button>
+                <button class="btn btn-lessons">Técnicas para mejorar expectativas del cliente</button>
             </div>
         </div>
+
+        <div class="container text-center card w-75 extra-user margin-top">
+            <div class="card-body">
+                <h2 class="card-title display-5 font-title">Mentora</h2>
+                <img src="../../../../assets//img/Pic.png" alt="">
+                <h3 class="card-text">Sara Salas</h3>
+                <h5 class="card-text">Customer Service | Consultant</h5>
+                <a href="">Ver en Linkedin</a>
+            </div>
+        </div>
+
+        <button class="btn btn-lg btn-block mx-auto d-block next-btn margin-top">Iniciar el curso</button>
 
         <div>
-            <h2>Mentora</h2>
-            <img src="" alt="">
-            <h3>Sara Salas</h3>
-            <h5>Customer Service | Consultant</h5>
-            <a href="">Ver en Linkedin</a>
+            <h2 class="display-5 font-title margin-top">Alguien como tú</h2>
+            <p>Mira lo que opina la comunidad de su aprendizaje con este curso.</p>
         </div>
 
-        <button>Iniciar el curso</button>
+        <div class="container text-center card w-75 extra-user margin-top">
+            <div class="card-body">
+                <img src="../../../../assets/img/twitter-cita.png" alt="">
+                <h5 class="card-title font-title">Andre Jimenez</h5>
+                <p class="card-text">Decidí inscribirme al curso XX de Impulse Learning para mejorar</p>
+                <a href=""><i class="fa fa-twitter"></i>@andreji</a>
+            </div>
 
-        div
+        </div>
 
-
-        
-        <div class="acordion">
+        <!-- <div class="card-deck">
             <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Cursos Disponibles</button>
-                    </h5>
-                </div>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body" *ngFor = "let temas of course.topics">
-                        <button class="btn btn-link collapsed" (click)="getTopicName(temas.nameTopic)" [routerLink]= "['/temas/curso']">{{temas.nameTopic}}</button>
-                    </div>
+                <img class="card-img-top" src="" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title font-title">Design Principles</h5>
+                    <label for="">Beginner</label>
+                    <label for="">12 hrs</label>
                 </div>
             </div>
-        </div>
+
+            <div class="card">
+                <img class="card-img-top" src="" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title font-title">UX Design for Devs</h5>
+                    <label for="">Intermediate</label>
+                    <label for="">8 hrs</label>
+                </div>
+            </div>
+        </div> -->
     </div>
 </div>
