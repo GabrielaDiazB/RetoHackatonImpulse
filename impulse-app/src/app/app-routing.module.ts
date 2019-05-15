@@ -6,7 +6,8 @@ import { TopicmultimediaComponent } from './components/courses/topicmultimedia/t
 const routes: Routes = [
   { path: '', redirectTo: '/temas', pathMatch: 'full'},
   { path: 'temas', component: TopicsComponent},
-  { path: 'temas/curso', component: TopicmultimediaComponent }
+  { path: 'temas/curso', component: TopicmultimediaComponent },
+  
 ];
 
 @NgModule({
