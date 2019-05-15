@@ -12,10 +12,11 @@ export interface Producto {
   providedIn: 'root'
 })
 export class LocalService {
-  public arr: Producto[] = [];
-
-public choosenTopic = new BehaviorSubject([]);
-topicCourses = this.choosenTopic.asObservable();
+  public arr: Producto = {
+    nombre: '',
+    video: '',
+    description: ''
+  }
 
 
   constructor(public serviceFirestore: FirestoreserviceService) { }
