@@ -23,6 +23,7 @@ import { QuestionsComponent } from './components/quiz/questions/questions.compon
 import { SkillLevelComponent } from './components/quiz/skill-level/skill-level.component';
 import { RealcaseTestComponent } from './components/realcase-test/realcase-test.component';
 import { HomeComponent } from './components/home/home.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { HomeComponent } from './components/home/home.component';
     QuestionsComponent,
     SkillLevelComponent,
     RealcaseTestComponent,
-    HomeComponent
+    HomeComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
