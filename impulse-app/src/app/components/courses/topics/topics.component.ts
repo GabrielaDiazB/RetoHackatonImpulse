@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FirestoreDBService } from '../../../services/firestore/firestore-db.service';
 
 @Component({
   selector: 'app-topics',
