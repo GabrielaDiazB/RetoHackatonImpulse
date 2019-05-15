@@ -19,8 +19,8 @@ export class FirestoreserviceService {
       this.afsAuth.auth.createUserWithEmailAndPassword(email, pass)
         .then(userData => {
           resolve(userData),
-            this.updateUserData(userData.user)
-        }).catch(err => console.log(reject(err)))
+            this.updateUserData(userData.user);
+        }).catch(err => console.log(reject(err)));
     });
   }
 
@@ -34,12 +34,12 @@ export class FirestoreserviceService {
 
   loginFacebookUser() {
     return this.afsAuth.auth.signInWithPopup(new auth.FacebookAuthProvider())
-      .then(credential => this.updateUserData(credential.user))
+      .then(credential => this.updateUserData(credential.user));
   }
 
   loginGoogleUser() {
     return this.afsAuth.auth.signInWithPopup(new auth.GoogleAuthProvider())
-      .then(credential => this.updateUserData(credential.user))
+      .then(credential => this.updateUserData(credential.user));
   }
 
   logoutUser() {
@@ -55,8 +55,8 @@ export class FirestoreserviceService {
     const data: UserInterface = {
       id: user.uid,
       email: user.email
-    }
-    return userRef.set(data, { merge: true })
+    };
+    return userRef.set(data, { merge: true });
   }
 
 

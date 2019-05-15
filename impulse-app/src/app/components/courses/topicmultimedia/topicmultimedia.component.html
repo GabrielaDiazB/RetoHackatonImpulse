@@ -1,7 +1,9 @@
-<div *ngFor = "let course of courseTopics">
-    <div *ngFor = "let temas of course.topics">
+<div *ngFor="let course of courseTopics">
+    <div *ngFor="let temas of course.topics">
         <h1>{{temas.nameTopic}}</h1>
         <p>{{temas.description}}</p>
         <p>{{temas.video}}</p>
+        <!-- <img src="{{ temas.video }}" /> -->
+        <!-- <video src="{{ temas.video}}"></video> -->
     </div>
 </div>
