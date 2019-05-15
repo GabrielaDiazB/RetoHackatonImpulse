@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FirestoreserviceService } from 'src/app/services/firestore/firestoreservice.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authService: FirestoreserviceService) { }
 
   ngOnInit() {
+  }
+
+  onLogout() {
+    this.authService.logoutUser();
   }
 
 }
