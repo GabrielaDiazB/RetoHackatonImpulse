@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FirestoreserviceService } from 'src/app/services/firestore/firestoreservice.service';
 
 @Component({
   selector: 'app-topics',
@@ -9,9 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class TopicsComponent implements OnInit {
   public courseTopics = [];
 
-  constructor( public coursesService: FirestoreDBService ) { 
+  constructor( public coursesService:  FirestoreserviceService) { 
     this.coursesService.getCourses().subscribe(topics => {
-      this.courseTopics = topics;
+      return this.courseTopics = topics;
     })
    }
 
