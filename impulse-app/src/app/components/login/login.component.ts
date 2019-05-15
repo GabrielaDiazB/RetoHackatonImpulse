@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/auth';
+// import { AngularFireAuth } from '@angular/fire/auth';
 import { Router } from '@angular/router';
 import { FirestoreserviceService } from 'src/app/services/firestore/firestoreservice.service';
 
@@ -10,8 +10,7 @@ import { FirestoreserviceService } from 'src/app/services/firestore/firestoreser
 })
 export class LoginComponent implements OnInit {
   
-  constructor(
-    private afsAuth: AngularFireAuth, private router: Router, private authService: FirestoreserviceService) { }
+  constructor(private router: Router, private authService: FirestoreserviceService) { }
   public email: string = '';
   public password: string = '';
   ngOnInit() {
