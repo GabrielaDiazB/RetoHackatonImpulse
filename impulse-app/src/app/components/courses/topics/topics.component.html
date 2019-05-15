@@ -1,8 +1,57 @@
 <div>
-    <div *ngFor = "let course of courseTopics">
-        <h1>{{course.name}}</h1>
-        <ul *ngFor = "let temas of course.topics">
-                <li><button (click)="getTopicName(temas.nameTopic)" [routerLink]= "['/temas/curso']">{{temas.nameTopic}}</button></li>
-        </ul>
+    <div  *ngFor = "let course of courseTopics">
+        <div>
+            <h2>Curso</h2>
+            <h1>{{course.name}}</h1>
+            <img src="../../../../assets/img/imagen-video.png" alt="">
+            <button [routerLink]= "['/temas/curso']"> Iniciar el Curso</button>
+            <label for="">Intermedio</label>
+        </div>
+
+        <div>
+            <h2>Valoración del curso</h2>
+            <img src="" alt="">
+            <button><i class=""></i>Compartir este curso</button>
+
+        </div>
+
+        <div>
+            <h2>Resumen</h2>
+            <p>El experto en servicio al cliente Jeff Toister enseña a evitar situaciones donde se forman expectativas poco razonables, eligiendo un lenguaje apropiado para educar a los clientes y explicar las áreas de confusión potenciales.</p>
+        </div>
+
+        <div>
+            <h2>Lecciones</h2>
+            <div>
+                <button>Introducción</button>
+                <button>Preparación para el curso</button>
+                <button>Técnicas para mejorar las expectativas del cliente</button>
+            </div>
+        </div>
+
+        <div>
+            <h2>Mentora</h2>
+            <img src="" alt="">
+            <h3>Sara Salas</h3>
+            <h5>Customer Service | Consultant</h5>
+            <a href="">Ver en Linkedin</a>
+        </div>
+
+        <button>Iniciar el curso</button>
+        
+        <div class="acordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Cursos Disponibles</button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body" *ngFor = "let temas of course.topics">
+                        <button class="btn btn-link collapsed" (click)="getTopicName(temas.nameTopic)" [routerLink]= "['/temas/curso']">{{temas.nameTopic}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
