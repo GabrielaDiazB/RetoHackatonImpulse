@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('../../../../assets/fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+.font-im {
+    font-family: Montserrat, monospace;
+}
+
+.img-user {
+    width: 120px;
+    height: 120px;
+}
+
+.name-user {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.p-about-me {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.p-info-user {
+    font-size: 14px;
+}
