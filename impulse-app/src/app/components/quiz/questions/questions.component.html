@@ -1,33 +1,9 @@
-<!-- <div>
-  <div *ngFor = "let course of courseTopics">
-      <h1>{{course.name}}</h1>
-      <ul *ngFor = "let temas of course.topics">
-              <li><button (click)="getTopicName(temas.nameTopic)" [routerLink]= "['/temas/curso']">{{temas.nameTopic}}</button></li>
-      </ul>
+<section id="profile" class="container">
+  <div class="row mt-5">
+      <div class="offset-lg-4 col-lg-4 col-sm-6 text-center found">
+          <p>¡Hola!, ya estas dentro!</p>
+          <p>Para asegurarte que tu experiencia de aprendizaje sea la mejor posible, necesitamos conocerte un poco más.</p>
+          <button class= "btn-project col align-self-center" [routerLink]="['/quiz']">Comencemos</button>
+      </div>
   </div>
-</div> -->
-<div>
-  <!-- <div *ngFor = "let questions of quizInitial"> -->
-    <!-- <h1>{{quiz.descrip}}</h1> -->
-    <h1>Pregunta 1</h1>
-    <div>
-      <label>Resp. 1 <input type="radio" id=""></label>
-      <label>Resp. 2 <input type="radio" id=""></label>
-    </div>
-    <div>
-      <label>Resp. 3 <input type="radio" id=""></label>
-      <label>Resp. 4 <input type="radio" id=""></label>
-    </div>
-    <hr>
-    <h1>Pregunta 2</h1>
-    <div>
-      <label>Resp. 1 <input type="radio" id=""></label>
-      <label>Resp. 2 <input type="radio" id=""></label>
-    </div>
-    <div>
-      <label>Resp. 3 <input type="radio" id=""></label>
-      <label>Resp. 4 <input type="radio" id=""></label>
-    </div>
-    <hr>
-  <!-- </div> -->
-</div>
+</section>
