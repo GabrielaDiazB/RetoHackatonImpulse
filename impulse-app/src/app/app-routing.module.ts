@@ -5,11 +5,13 @@ import { TopicmultimediaComponent } from './components/courses/topicmultimedia/t
 import { LoginComponent } from './components/login/login.component';
 // import { UserInfoComponent } from './components/profile/user-info/user-info.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { QuizComponent } from './components/quiz/quiz.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full'},
   { path: 'temas', component: TopicsComponent},
   { path: 'temas/curso', component: TopicmultimediaComponent },
+  { path: 'quiz', component: QuizComponent },
   { path: 'login', component: LoginComponent },
   { path: 'perfil', component: ProfileComponent }
   
