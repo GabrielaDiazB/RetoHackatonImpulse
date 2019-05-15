@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('../../../../assets/fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+.h-skills {
+    padding: 15px;
+}
+
+.img-stats {
+    width: 380px;
+}
+
+.btn-project {
+    background: linear-gradient(90deg, #00EE93 4.08%, #00A3F9 100%);
+    border-radius: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Montserrat, monospace;
+    width: 101px;
+    height: 35px;
+}

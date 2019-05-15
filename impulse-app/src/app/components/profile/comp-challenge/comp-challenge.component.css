@@ -1,0 +1,43 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('../../../../assets/fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+.img-alicorp {
+    height: 100px;
+    width: 100px;
+}
+
+.div-card {
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.p-date {
+    float: left;
+    font-family: Montserrat;
+}
+
+.p-status1 {
+    float: right;
+    font-family: Montserrat;
+    background-color: #25CED1;
+    font-size: 20px;
+    color: #FFFF;
+}
+
+.p-status2 {
+    float: right;
+    font-family: Montserrat;
+    background-color: #EC493F;
+    font-size: 20px;
+    color: #FFFF;
+}
+
+.p-link {
+    color: #2080B7;
+}
+
+.card {
+    padding: 15px;
+}
