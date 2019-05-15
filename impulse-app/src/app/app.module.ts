@@ -1,6 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { environment } from 'src/environments/environment';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { FirestoreserviceService } from './services/firestore/firestoreservice.service';
+
+import { AngularFireAuth } from '@angular/fire/auth';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -26,9 +33,12 @@ import { TopicmultimediaComponent } from './components/courses/topicmultimedia/t
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [AngularFireAuth, FirestoreserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

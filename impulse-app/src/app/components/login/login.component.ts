@@ -9,8 +9,9 @@ import { FirestoreserviceService } from 'src/app/services/firestore/firestoreser
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
-  constructor(private afsAuth: AngularFireAuth, private router: Router, private authService: FirestoreserviceService ) { }
+  
+  constructor(
+    private afsAuth: AngularFireAuth, private router: Router, private authService: FirestoreserviceService) { }
   public email: string = '';
   public password: string = '';
   ngOnInit() {
