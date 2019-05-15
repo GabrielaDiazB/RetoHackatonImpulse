@@ -18,14 +18,11 @@ import { CompChallengeComponent } from './components/profile/comp-challenge/comp
 import { CoursesComponent } from './components/courses/courses.component';
 import { TopicsComponent } from './components/courses/topics/topics.component';
 import { TopicmultimediaComponent } from './components/courses/topicmultimedia/topicmultimedia.component';
-<<<<<<< HEAD
 import { QuizComponent } from './components/quiz/quiz.component';
 import { QuestionsComponent } from './components/quiz/questions/questions.component';
 import { SkillLevelComponent } from './components/quiz/skill-level/skill-level.component';
-=======
 import { RealcaseTestComponent } from './components/realcase-test/realcase-test.component';
 import { HomeComponent } from './components/home/home.component';
->>>>>>> a3b945dd5e9a4926c33e3b20df817356e33a8296
 
 @NgModule({
   declarations: [
@@ -38,14 +35,11 @@ import { HomeComponent } from './components/home/home.component';
     CoursesComponent,
     TopicsComponent,
     TopicmultimediaComponent,
-<<<<<<< HEAD
     QuizComponent,
     QuestionsComponent,
-    SkillLevelComponent
-=======
+    SkillLevelComponent,
     RealcaseTestComponent,
     HomeComponent
->>>>>>> a3b945dd5e9a4926c33e3b20df817356e33a8296
   ],
   imports: [
     BrowserModule,
