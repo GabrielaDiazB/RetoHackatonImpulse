@@ -18,6 +18,9 @@ import { CompChallengeComponent } from './components/profile/comp-challenge/comp
 import { CoursesComponent } from './components/courses/courses.component';
 import { TopicsComponent } from './components/courses/topics/topics.component';
 import { TopicmultimediaComponent } from './components/courses/topicmultimedia/topicmultimedia.component';
+import { QuizComponent } from './components/quiz/quiz.component';
+import { QuestionsComponent } from './components/quiz/questions/questions.component';
+import { SkillLevelComponent } from './components/quiz/skill-level/skill-level.component';
 import { RealcaseTestComponent } from './components/realcase-test/realcase-test.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
@@ -33,6 +36,9 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     CoursesComponent,
     TopicsComponent,
     TopicmultimediaComponent,
+    QuizComponent,
+    QuestionsComponent,
+    SkillLevelComponent,
     RealcaseTestComponent,
     HomeComponent,
     NavBarComponent
