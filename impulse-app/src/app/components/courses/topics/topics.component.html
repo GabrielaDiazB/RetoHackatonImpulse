@@ -1,10 +1,8 @@
 <div>
-    <div>
-        <h1>Nombre del Curso</h1>
-    </div>
-    <div>
-        <ul *ngFor = "let topic of courseTopics">
-            <li><button></button></li>
+    <div *ngFor = "let course of courseTopics">
+        <h1>{{course.name}}</h1>
+        <ul *ngFor = "let temas of course.topics">
+                <li><button (click)="getTopicName(temas.nameTopic)" [routerLink]= "['/temas/curso']">{{temas.nameTopic}}</button></li>
         </ul>
     </div>
 </div>
