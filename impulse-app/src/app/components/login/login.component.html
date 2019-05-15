@@ -1,9 +1,6 @@
 <form #formLogin="ngForm" (submit)="onLogin()">
-  <h1 class="text-center display-5 mb-3 font-weight-normal margin-title" *ngIf="!isError">¡Bienvenid@!</h1>
+  <h1 class="text-center display-5 mb-3 font-weight-normal margin-title">¡Bienvenid@!</h1>
   <img class="mx-auto d-block login-pic" src="../../../assets/img/usuario.png" alt="">
-  <div class="alert alert-danger" role="alert" *ngIf="isError">
-    Something is wrong!
-  </div>
   <div class="form-group email-container">
     <input [(ngModel)]="email" type="email" id="email" name="email" class="form-control" placeholder="Email" required>
   </div>
