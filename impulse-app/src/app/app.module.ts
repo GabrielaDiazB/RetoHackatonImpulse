@@ -20,6 +20,7 @@ import { TopicsComponent } from './components/courses/topics/topics.component';
 import { TopicmultimediaComponent } from './components/courses/topicmultimedia/topicmultimedia.component';
 import { RealcaseTestComponent } from './components/realcase-test/realcase-test.component';
 import { HomeComponent } from './components/home/home.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { HomeComponent } from './components/home/home.component';
     TopicsComponent,
     TopicmultimediaComponent,
     RealcaseTestComponent,
-    HomeComponent
+    HomeComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,47 @@
+form {
+    padding: 10px;
+}
+
+.margin-title{
+    margin-top: 30px;
+}
+
+.login-pic{
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.email-container{
+    margin-top: 40px;
+}
+
+.password-question{
+    padding-left: 8px;
+}
+
+.login-btn{
+    width: 200px;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    background: linear-gradient(90deg, #00EE93 0%, #00A3F9 100%);
+    color: white;
+}
+
+.btn-fb{
+    background-color: #3B5998;
+    color: white; 
+    height: 50px;
+}
+
+.btn-container{
+    margin-top: 15px;
+}
+
+.btn-google{
+    background-color: #DD4B39;
+    color: white;
+    height: 50px;
+}
+
